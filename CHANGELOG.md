@@ -1,0 +1,26 @@
+## [1.0.2](https://gitlab.souvap-univention.de/souvap/tooling/charts/univention-keycloak/compare/v1.0.1...v1.0.2) (2023-11-24)
+
+
+### Bug Fixes
+
+* **limits:** Remove CPU limit ([c9f0296](https://gitlab.souvap-univention.de/souvap/tooling/charts/univention-keycloak/commit/c9f0296a3dd7aad04dca1894053e7a5663d6410a))
+
+## [1.0.1](https://gitlab.souvap-univention.de/souvap/tooling/charts/univention-keycloak/compare/v1.0.0...v1.0.1) (2023-11-23)
+
+
+### Bug Fixes
+
+* **theme:** Theming and rename to ums-keycloak ([4da24c5](https://gitlab.souvap-univention.de/souvap/tooling/charts/univention-keycloak/commit/4da24c566cff5df47f4f4196ce976ac25ee8953d))
+
+# 1.0.0 (2023-11-01)
+
+
+### Bug Fixes
+
+* **univention-keycloak:** Fix image digest ([1ce3b2d](https://gitlab.souvap-univention.de/souvap/tooling/charts/univention-keycloak/commit/1ce3b2d9ee3035fd95173fd6233da8bf1b6b94c3))
+
+
+### Features
+
+* **ci:** Add common CI builds ([438b4a4](https://gitlab.souvap-univention.de/souvap/tooling/charts/univention-keycloak/commit/438b4a4c99c362ff0501bf5c79212b27859898c2))
+* **univention-keycloak:** Initial commit ([dc86bee](https://gitlab.souvap-univention.de/souvap/tooling/charts/univention-keycloak/commit/dc86beeb6fdd1b1b0dabaa1d4886a392fcbbcfbc))

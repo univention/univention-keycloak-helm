@@ -1,0 +1,19 @@
+# SPDX-FileCopyrightText: 2023 Univention GmbH
+# SPDX-License-Identifier: AGPL-3.0-only
+---
+include:
+  project: "souvap/tooling/gitlab-config"
+  ref: "main"
+  file:
+    - "ci/common/lint.yml"
+    - "ci/helm/helm-lint.yml"
+    - "ci/helm/helm-release.yml"
+
+stages:
+  - ".pre"
+  - "lint"
+  - "docs"
+  - "package"
+  - "publish"
+  - ".post"
+...
