@@ -1,3 +1,10 @@
+# 1.0.0 (2023-11-28)
+
+
+### Bug Fixes
+
+* **keycloak:** Initial commit ([a56d5c5](https://gitlab.souvap-univention.de/souvap/tooling/charts/univention-keycloak/commit/a56d5c59fec5b1d93bad1f28f875dc0ddb9cbfdd))
+
 ## [1.0.2](https://gitlab.souvap-univention.de/souvap/tooling/charts/univention-keycloak/compare/v1.0.1...v1.0.2) (2023-11-24)
 
 
