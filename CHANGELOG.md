@@ -1,3 +1,10 @@
+## [1.0.1](https://gitlab.souvap-univention.de/souvap/tooling/charts/univention-keycloak/compare/v1.0.0...v1.0.1) (2023-12-13)
+
+
+### Bug Fixes
+
+* **keycloak:** Enable metrics by default, template ports and extend optional ingress (which is by default disabled) ([e905fd1](https://gitlab.souvap-univention.de/souvap/tooling/charts/univention-keycloak/commit/e905fd168dbf0f977159f2f936569a2c86d45ac2))
+
 # 1.0.0 (2023-11-28)
 
 
