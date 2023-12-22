@@ -1,3 +1,10 @@
+## [1.0.3](https://gitlab.souvap-univention.de/souvap/tooling/charts/univention-keycloak/compare/v1.0.2...v1.0.3) (2023-12-22)
+
+
+### Bug Fixes
+
+* **keycloak:** Fix ENV var name for setting the log level ([59895a9](https://gitlab.souvap-univention.de/souvap/tooling/charts/univention-keycloak/commit/59895a9c880f238d2c5de7643e3492590d44e5dc))
+
 ## [1.0.2](https://gitlab.souvap-univention.de/souvap/tooling/charts/univention-keycloak/compare/v1.0.1...v1.0.2) (2023-12-22)
 
 
