@@ -1,3 +1,10 @@
+## [1.0.2](https://gitlab.souvap-univention.de/souvap/tooling/charts/univention-keycloak/compare/v1.0.1...v1.0.2) (2023-12-22)
+
+
+### Bug Fixes
+
+* **keycloak:** Add ENV variables to support password renewal and setting the logLevel ([be192f5](https://gitlab.souvap-univention.de/souvap/tooling/charts/univention-keycloak/commit/be192f5de32bf66d09b723c807efb26f7b3444f7))
+
 ## [1.0.1](https://gitlab.souvap-univention.de/souvap/tooling/charts/univention-keycloak/compare/v1.0.0...v1.0.1) (2023-12-13)
 
 
