@@ -1,3 +1,10 @@
+## [1.0.4](https://gitlab.souvap-univention.de/souvap/tooling/charts/univention-keycloak/compare/v1.0.3...v1.0.4) (2024-02-26)
+
+
+### Bug Fixes
+
+* **envvar:** Set UNIVENTION_META_JSON ([b04a673](https://gitlab.souvap-univention.de/souvap/tooling/charts/univention-keycloak/commit/b04a6735d086f8526ed52a8e554d99966fc5b115))
+
 ## [1.0.3](https://gitlab.souvap-univention.de/souvap/tooling/charts/univention-keycloak/compare/v1.0.2...v1.0.3) (2023-12-22)
 
 
