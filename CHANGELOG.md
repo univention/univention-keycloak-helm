@@ -1,3 +1,10 @@
+## [1.0.5](https://gitlab.souvap-univention.de/souvap/tooling/charts/univention-keycloak/compare/v1.0.4...v1.0.5) (2024-02-26)
+
+
+### Bug Fixes
+
+* **envvar:** Remove UNIVENTION_META_JSON as it is addressed using Ingress in Keycloak-Extension's Proxy ([a0600e8](https://gitlab.souvap-univention.de/souvap/tooling/charts/univention-keycloak/commit/a0600e8e7d10d59d61972ac2229fe7f5abe0e23d))
+
 ## [1.0.4](https://gitlab.souvap-univention.de/souvap/tooling/charts/univention-keycloak/compare/v1.0.3...v1.0.4) (2024-02-26)
 
 
