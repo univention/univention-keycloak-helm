@@ -1,10 +1,10 @@
 <!--
-SPDX-FileCopyrightText: 2023 Univention GmbH
+SPDX-FileCopyrightText: 2024 Univention GmbH
 SPDX-License-Identifier: AGPL-3.0-only
 -->
-# Univention Keycloak
+# Keycloak
 
-This repository contains a helm chart for deploying the Keycloak component of the Univention Management Stack.
+This repository contains a helm chart for deploying the Keycloak component of Nubus.
 
 ## Prerequisites
 
@@ -18,7 +18,7 @@ Before you begin, ensure you have met the following requirements:
 
 The documentation is placed in the README of each helm chart:
 
-- [ums-keycloak](charts/ums-keycloak)
+- [keycloak](helm/keycloak)
 
 ## License
 
@@ -26,4 +26,4 @@ This project uses the following license: AGPL-3.0-only
 
 ## Copyright
 
-Copyright © 2023 Univention GmbH
+Copyright © 2024 Univention GmbH

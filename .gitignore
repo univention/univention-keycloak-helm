@@ -1,9 +1,6 @@
-# SPDX-FileCopyrightText: 2023 Univention GmbH
-# SPDX-License-Identifier: AGPL-3.0-only
-
-# Helm
-charts/**/charts
-Chart.lock
-
-# IDE
-.idea
+**/__pycache__/
+/docker-compose.override.yaml
+/ansible/inventory/*.yaml
+/helm/*/charts/
+/secret/
+/ssl/
