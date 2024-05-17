@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.0](https://git.knut.univention.de/univention/components/keycloak/compare/v0.0.1...v0.1.0) (2024-05-17)
+
+
+### Features
+
+* cleanup values ([a9d3697](https://git.knut.univention.de/univention/components/keycloak/commit/a9d369767e9a9c61e875e7c976fe2ec75d3f85d1))
+
 ## 0.0.1 (2024-05-07)
 
 
