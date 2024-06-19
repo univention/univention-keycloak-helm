@@ -792,33 +792,6 @@ true
 			<td>Set the amount of replicas of deployment.</td>
 		</tr>
 		<tr>
-			<td>resources.limits.memory</td>
-			<td>string</td>
-			<td><pre lang="json">
-"1Gi"
-</pre>
-</td>
-			<td>The max number of RAM to consume.</td>
-		</tr>
-		<tr>
-			<td>resources.requests.cpu</td>
-			<td>string</td>
-			<td><pre lang="json">
-"100m"
-</pre>
-</td>
-			<td>The number of CPUs which has to be available on the scheduled node.</td>
-		</tr>
-		<tr>
-			<td>resources.requests.memory</td>
-			<td>string</td>
-			<td><pre lang="json">
-"512Mi"
-</pre>
-</td>
-			<td>The number of RAM which has to be available on the scheduled node.</td>
-		</tr>
-		<tr>
 			<td>service.annotations</td>
 			<td>object</td>
 			<td><pre lang="json">
@@ -826,6 +799,15 @@ true
 </pre>
 </td>
 			<td>Additional custom annotations</td>
+		</tr>
+		<tr>
+			<td>service.clusterIP</td>
+			<td>string</td>
+			<td><pre lang="json">
+"None"
+</pre>
+</td>
+			<td></td>
 		</tr>
 		<tr>
 			<td>service.enabled</td>
@@ -883,6 +865,33 @@ true
 		</tr>
 		<tr>
 			<td>service.ports.https.protocol</td>
+			<td>string</td>
+			<td><pre lang="json">
+"TCP"
+</pre>
+</td>
+			<td>service protocol.</td>
+		</tr>
+		<tr>
+			<td>service.ports.ispn.containerPort</td>
+			<td>int</td>
+			<td><pre lang="json">
+7800
+</pre>
+</td>
+			<td>Internal port.</td>
+		</tr>
+		<tr>
+			<td>service.ports.ispn.port</td>
+			<td>int</td>
+			<td><pre lang="json">
+7800
+</pre>
+</td>
+			<td>Accessible port.</td>
+		</tr>
+		<tr>
+			<td>service.ports.ispn.protocol</td>
 			<td>string</td>
 			<td><pre lang="json">
 "TCP"

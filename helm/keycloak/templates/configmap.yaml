@@ -2,7 +2,6 @@
 # SPDX-FileCopyrightText: 2024 Univention GmbH
 
 ---
-
 apiVersion: "v1"
 kind: ConfigMap
 metadata:
@@ -24,7 +23,12 @@ data:
   KC_LOG_LEVEL: {{ .Values.config.logLevel | quote }}
   KC_HOSTNAME: {{ .Values.config.hostname | default (printf "%s.%s" .Values.global.subDomains.keycloak .Values.global.domain) | quote }}
   KC_PROXY: {{ .Values.config.proxy | quote }}
-  KC_DB: postgres
+  KC_DB: "postgres"
+  # https://www.keycloak.org/server/caching
+  KC_CACHE: "ispn"
+  # https://www.keycloak.org/server/caching#_available_transport_stacks
+  KC_CACHE_STACK: "kubernetes"
+  KC_METRICS_ENABLED: "true"
 
   KC_DB_URL_HOST: {{ include "keycloak.postgresql.connection.host" . | quote }}
   KC_DB_URL_PORT: {{ include "keycloak.postgresql.connection.port" . | quote }}
@@ -34,3 +38,113 @@ data:
   UNIVENTION_THEME: {{ include "keycloak.style.themeUrl" . | quote }}
   UNIVENTION_CUSTOM_THEME: {{ include "keycloak.style.customUrl" . | quote }}
   UNIVENTION_FAVICON: {{ include "keycloak.style.faviconUrl" . | quote }}
+
+  # Enable DNS_PING to find other Pods
+  # JGROUPS_DISCOVERY_PROTOCOL: "dns.DNS_PING"
+  # Set DNS Name to keycloak-headless service
+  # JGROUPS_DISCOVERY_PROPERTIES: {{ printf "dns_query=%s.%s.svc.cluster.local" (include "common.names.fullname" . ) ( include "common.names.namespace" . )  }}
+  CACHE_OWNERS_COUNT: {{ .Values.replicaCount | quote }}
+  CACHE_OWNERS_AUTH_SESSIONS_COUNT: {{ .Values.replicaCount | quote }}
+  # Allows use of a LoadBalancer
+  PROXY_ADDRESS_FORWARDING: "true"
+  JAVA_OPTS_APPEND: {{ printf "-Djgroups.dns.query=%s.%s.svc.cluster.local" (include "common.names.fullname" . ) ( include "common.names.namespace" . ) }}
+...
+---
+apiVersion: "v1"
+kind: ConfigMap
+metadata:
+  name: {{ printf "%s-cache"  ( include "common.names.fullname" . ) }}
+  namespace: {{ include "common.names.namespace" . | quote }}
+  labels:
+    {{- $commonLabels := include "common.labels.standard" . | fromYaml }}
+    {{- $uiLabels := dict "app.kubernetes.io/name" (include "common.names.fullname" .) }}
+    {{- $mergedLabels := merge $uiLabels $commonLabels}}
+    {{- toYaml $mergedLabels | nindent 4 }}
+    {{- if .Values.additionalLabels }}
+    {{- include "common.tplvalues.render" ( dict "value" .Values.additionalLabels "context" . ) | nindent 4 }}
+    {{- end }}
+  {{- if .Values.additionalAnnotations }}
+  annotations: {{- include "common.tplvalues.render" ( dict "value" .Values.additionalAnnotations "context" . ) | nindent 4 }}
+  {{- end }}
+data:
+  cache-ispn-dns-ping.xml: |
+    <?xml version="1.0" encoding="UTF-8"?>
+    <infinispan
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="urn:infinispan:config:11.0 http://www.infinispan.org/schemas/infinispan-config-11.0.xsd"
+        xmlns="urn:infinispan:config:11.0">
+
+      <!-- custom stack goes into the jgroups element -->
+      <jgroups>
+        <stack name="dns-ping" extends="tcp">
+          <dns.DNS_PING
+            dns_query="${env.JGROUPS_DISCOVERY_PROPERTIES}"
+            dns_record_type="SRV" />
+        </stack>
+      </jgroups>
+
+      <cache-container name="keycloak">
+        <!-- custom stack must be referenced by name in the stack attribute of the transport element -->
+        <transport lock-timeout="60000" stack="dns-ping"/>
+        <local-cache name="realms">
+          <encoding>
+            <key media-type="application/x-java-object"/>
+            <value media-type="application/x-java-object"/>
+          </encoding>
+          <memory max-count="10000"/>
+        </local-cache>
+        <local-cache name="users">
+          <encoding>
+            <key media-type="application/x-java-object"/>
+            <value media-type="application/x-java-object"/>
+          </encoding>
+          <memory max-count="10000"/>
+        </local-cache>
+        <distributed-cache name="sessions" owners="2">
+          <expiration lifespan="-1"/>
+        </distributed-cache>
+        <distributed-cache name="authenticationSessions" owners="2">
+          <expiration lifespan="-1"/>
+        </distributed-cache>
+        <distributed-cache name="offlineSessions" owners="2">
+          <expiration lifespan="-1"/>
+        </distributed-cache>
+        <distributed-cache name="clientSessions" owners="2">
+          <expiration lifespan="-1"/>
+        </distributed-cache>
+        <distributed-cache name="offlineClientSessions" owners="2">
+          <expiration lifespan="-1"/>
+        </distributed-cache>
+        <distributed-cache name="loginFailures" owners="2">
+          <expiration lifespan="-1"/>
+        </distributed-cache>
+        <local-cache name="authorization">
+          <encoding>
+            <key media-type="application/x-java-object"/>
+            <value media-type="application/x-java-object"/>
+          </encoding>
+          <memory max-count="10000"/>
+        </local-cache>
+        <replicated-cache name="work">
+          <expiration lifespan="-1"/>
+        </replicated-cache>
+        <local-cache name="keys">
+          <encoding>
+            <key media-type="application/x-java-object"/>
+            <value media-type="application/x-java-object"/>
+          </encoding>
+          <expiration max-idle="3600000"/>
+          <memory max-count="1000"/>
+        </local-cache>
+        <distributed-cache name="actionTokens" owners="2">
+          <encoding>
+            <key media-type="application/x-java-object"/>
+            <value media-type="application/x-java-object"/>
+          </encoding>
+          <expiration max-idle="-1" lifespan="-1" interval="300000"/>
+          <memory max-count="-1"/>
+        </distributed-cache>
+      </cache-container>
+    </infinispan>
+
+...

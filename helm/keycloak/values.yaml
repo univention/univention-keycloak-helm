@@ -303,15 +303,16 @@ replicaCount: 1
 # Configure resource requests and limits.
 #
 # Ref: https://kubernetes.io/docs/user-guide/compute-resources/
-resources:
-  limits:
-    # -- The max number of RAM to consume.
-    memory: "1Gi"
-  requests:
-    # -- The number of CPUs which has to be available on the scheduled node.
-    cpu: "100m"
-    # -- The number of RAM which has to be available on the scheduled node.
-    memory: "512Mi"
+# TODO: Infinispan is not happy with the network quota
+# resources:
+#   limits:
+#     # -- The max number of RAM to consume.
+#     memory: "1Gi"
+#   requests:
+#     # -- The number of CPUs which has to be available on the scheduled node.
+#     cpu: "100m"
+#     # -- The number of RAM which has to be available on the scheduled node.
+#     memory: "512Mi"
 
 # Define and create Kubernetes Service.
 #
@@ -335,6 +336,7 @@ service:
 
   # -- Choose the kind of Service, one of "ClusterIP", "NodePort" or "LoadBalancer".
   type: "ClusterIP"
+  clusterIP: "None"
 
   # Define the ports of Service.
   # You can set the port value to an arbitrary value, it will map the container port by name.
@@ -345,6 +347,13 @@ service:
       port: 8080
       # -- Internal port.
       containerPort: 8080
+      # -- service protocol.
+      protocol: "TCP"
+    ispn:
+      # -- Accessible port.
+      port: 7800
+      # -- Internal port.
+      containerPort: 7800
       # -- service protocol.
       protocol: "TCP"
     https:

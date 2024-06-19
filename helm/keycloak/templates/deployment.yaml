@@ -136,10 +136,20 @@ spec:
           {{- if .Values.lifecycleHooks }}
           lifecycle: {{- include "common.tplvalues.render" (dict "value" .Values.lifecycleHooks "context" .) | nindent 12 }}
           {{- end }}
+          # volumeMounts:
+          #   - name: "startup"
+          #     mountPath: "/opt/keycloak/conf"
+          #     readOnly: true
           {{- if .Values.extraVolumeMounts }}
-          volumeMounts: {{- include "common.tplvalues.render" (dict "value" .Values.extraVolumeMounts "context" .) | nindent 12 }}
+          {{- include "common.tplvalues.render" (dict "value" .Values.extraVolumeMounts "context" .) | nindent 12 }}
           {{- end }}
+      volumes:
+        - name: "startup"
+          configMap:
+            name: {{ printf "%s-cache"  ( include "common.names.fullname" . ) }}
+            subPath: "cache-ispn-dns-ping.xml"
+            defaultMode: 0555
       {{- if .Values.extraVolumes }}
-      volumes: {{- include "common.tplvalues.render" (dict "value" .Values.extraVolumes  "context" .) | nindent 8 }}
+      {{- include "common.tplvalues.render" (dict "value" .Values.extraVolumes  "context" .) | nindent 8 }}
       {{- end }}
 ...
