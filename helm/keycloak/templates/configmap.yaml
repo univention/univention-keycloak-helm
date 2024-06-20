@@ -34,3 +34,40 @@ data:
   UNIVENTION_THEME: {{ include "keycloak.style.themeUrl" . | quote }}
   UNIVENTION_CUSTOM_THEME: {{ include "keycloak.style.customUrl" . | quote }}
   UNIVENTION_FAVICON: {{ include "keycloak.style.faviconUrl" . | quote }}
+
+
+...
+
+---
+
+apiVersion: "v1"
+kind: ConfigMap
+metadata:
+  name: keycloak-custom-css
+  namespace: {{ include "common.names.namespace" . | quote }}
+  labels:
+    {{- $commonLabels := include "common.labels.standard" . | fromYaml }}
+    {{- $uiLabels := dict "app.kubernetes.io/name" (include "common.names.fullname" .) }}
+    {{- $mergedLabels := merge $uiLabels $commonLabels}}
+    {{- toYaml $mergedLabels | nindent 4 }}
+    {{- if .Values.additionalLabels }}
+    {{- include "common.tplvalues.render" ( dict "value" .Values.additionalLabels "context" . ) | nindent 4 }}
+    {{- end }}
+  {{- if .Values.additionalAnnotations }}
+  annotations: {{- include "common.tplvalues.render" ( dict "value" .Values.additionalAnnotations "context" . ) | nindent 4 }}
+  {{- end }}
+data:
+  custom.css: |-
+    #kc-login, #kc-logout, #saveTOTPBtn, .pf-c-button.btn-lg {
+        color: blue !important;
+        border: 2px solid;
+    }
+  theme.properties: |-
+    parent=keycloak
+    styles=css/login.css css/styles.css css/custom.css
+    scripts=univention.js
+    univentionTheme=${env.UNIVENTION_THEME:/univention/theme.css}
+    univentionFavIcon=${env.UNIVENTION_FAVICON:/favicon.ico}
+    univentionMetaJson=${env.UNIVENTION_META_JSON:/univention/meta.json}
+
+...

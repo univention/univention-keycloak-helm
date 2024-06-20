@@ -136,10 +136,21 @@ spec:
           {{- if .Values.lifecycleHooks }}
           lifecycle: {{- include "common.tplvalues.render" (dict "value" .Values.lifecycleHooks "context" .) | nindent 12 }}
           {{- end }}
+          volumeMounts:
+            - name: "keycloak-custom-css"
+              mountPath: "/opt/keycloak/themes/UCS/login/resources/css/custom.css"
+              subPath: "custom.css"
+            - name: "keycloak-custom-css"
+              mountPath: "/opt/keycloak/themes/UCS/login/theme.properties"
+              subPath: "theme.properties"
           {{- if .Values.extraVolumeMounts }}
-          volumeMounts: {{- include "common.tplvalues.render" (dict "value" .Values.extraVolumeMounts "context" .) | nindent 12 }}
+          {{- include "common.tplvalues.render" (dict "value" .Values.extraVolumeMounts "context" .) | nindent 12 }}
           {{- end }}
+      volumes:
+        - name: "keycloak-custom-css"
+          configMap:
+            name: keycloak-custom-css
       {{- if .Values.extraVolumes }}
-      volumes: {{- include "common.tplvalues.render" (dict "value" .Values.extraVolumes  "context" .) | nindent 8 }}
+      {{- include "common.tplvalues.render" (dict "value" .Values.extraVolumes  "context" .) | nindent 8 }}
       {{- end }}
 ...
