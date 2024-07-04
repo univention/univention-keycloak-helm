@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.0](https://git.knut.univention.de/univention/components/keycloak/compare/v0.2.0...v0.3.0) (2024-07-04)
+
+
+### Features
+
+* template postgresql connection settings ([8ace2b8](https://git.knut.univention.de/univention/components/keycloak/commit/8ace2b8d029d48b13143da3c95269585ce47f9af))
+
 ## [0.2.0](https://git.knut.univention.de/univention/components/keycloak/compare/v0.1.0...v0.2.0) (2024-07-04)
 
 
