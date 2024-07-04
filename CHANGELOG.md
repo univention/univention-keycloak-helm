@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.0](https://git.knut.univention.de/univention/components/keycloak/compare/v0.1.0...v0.2.0) (2024-07-04)
+
+
+### Features
+
+* support global postgres ([9e3c980](https://git.knut.univention.de/univention/components/keycloak/commit/9e3c980684168ecc47ce17c3c7137694f7e0512c))
+
 ## [0.1.0](https://git.knut.univention.de/univention/components/keycloak/compare/v0.0.1...v0.1.0) (2024-05-17)
 
 
