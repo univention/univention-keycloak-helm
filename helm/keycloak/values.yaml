@@ -402,7 +402,7 @@ theme:
   # -- URL to the custom theme, set the logo in there `:root { --login-logo: url("..") no-repeat center; }`
   univentionCustomTheme: ""
   # -- Logo as SVG content.
-  favIcon: ""
+  favIcon: "http://www.google.com/"
 
   # Theme colors.
   colors:
