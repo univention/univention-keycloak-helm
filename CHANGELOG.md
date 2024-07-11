@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.1](https://git.knut.univention.de/univention/components/keycloak/compare/v0.3.0...v0.3.1) (2024-07-11)
+
+
+### Bug Fixes
+
+* meta.json ([4e3421b](https://git.knut.univention.de/univention/components/keycloak/commit/4e3421b6d4a0d47d49ee6e58651225184c36cef7))
+
 ## [0.3.0](https://git.knut.univention.de/univention/components/keycloak/compare/v0.2.0...v0.3.0) (2024-07-04)
 
 
