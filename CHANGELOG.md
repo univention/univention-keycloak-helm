@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.0](https://git.knut.univention.de/univention/components/keycloak/compare/v0.3.1...v0.4.0) (2024-08-04)
+
+
+### Features
+
+* HA Keycloak ([a5909b9](https://git.knut.univention.de/univention/components/keycloak/commit/a5909b9c3eedb76aefbea4167a60c3c38e21b33b))
+
 ## [0.3.1](https://git.knut.univention.de/univention/components/keycloak/compare/v0.3.0...v0.3.1) (2024-07-11)
 
 
