@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.1](https://git.knut.univention.de/univention/components/keycloak/compare/v0.4.0...v0.4.1) (2024-08-05)
+
+
+### Bug Fixes
+
+* missing configuration for Headless service ([c398863](https://git.knut.univention.de/univention/components/keycloak/commit/c398863e89c66e32b3a7faed94efae2e64a5bffd))
+
 ## [0.4.0](https://git.knut.univention.de/univention/components/keycloak/compare/v0.3.1...v0.4.0) (2024-08-04)
 
 
