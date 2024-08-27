@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.0](https://git.knut.univention.de/univention/components/keycloak/compare/v0.4.1...v0.5.0) (2024-08-27)
+
+
+### Features
+
+* upgrade to keycloak 25 ([0c42858](https://git.knut.univention.de/univention/components/keycloak/commit/0c428586531d9869d0d64723a16b0da8d7bc5294))
+
 ## [0.4.1](https://git.knut.univention.de/univention/components/keycloak/compare/v0.4.0...v0.4.1) (2024-08-05)
 
 
