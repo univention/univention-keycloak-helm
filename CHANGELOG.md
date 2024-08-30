@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.1](https://git.knut.univention.de/univention/components/keycloak/compare/v0.5.0...v0.5.1) (2024-08-30)
+
+
+### Bug Fixes
+
+* added flag to resolve backchannel connections ([9e1563a](https://git.knut.univention.de/univention/components/keycloak/commit/9e1563a9926f6bfa169109b484bc4851dd4ddbde))
+
 ## [0.5.0](https://git.knut.univention.de/univention/components/keycloak/compare/v0.4.1...v0.5.0) (2024-08-27)
 
 
