@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.2](https://git.knut.univention.de/univention/components/keycloak/compare/v0.5.1...v0.5.2) (2024-09-03)
+
+
+### Bug Fixes
+
+* change deployment to a statefulset ([2f67846](https://git.knut.univention.de/univention/components/keycloak/commit/2f678461e42480ba10ce2f7be0193a645c45b2fb))
+
 ## [0.5.1](https://git.knut.univention.de/univention/components/keycloak/compare/v0.5.0...v0.5.1) (2024-08-30)
 
 
