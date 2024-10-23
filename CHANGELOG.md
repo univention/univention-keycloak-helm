@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.6.0](https://git.knut.univention.de/univention/components/keycloak/compare/v0.5.2...v0.6.0) (2024-10-23)
+
+
+### Features
+
+* enabled ingress configuration for keycloak by default ([de8c644](https://git.knut.univention.de/univention/components/keycloak/commit/de8c6444a8c9a2e97d56d80940981647f4b43d40))
+
 ## [0.5.2](https://git.knut.univention.de/univention/components/keycloak/compare/v0.5.1...v0.5.2) (2024-09-03)
 
 
