@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.7.0](https://git.knut.univention.de/univention/components/keycloak/compare/v0.6.0...v0.7.0) (2024-11-05)
+
+
+### Features
+
+* migrate components secrets ([33d3fb2](https://git.knut.univention.de/univention/components/keycloak/commit/33d3fb2d98ae2f7de8b88c6cc3b11e4498ad16a1))
+
 ## [0.6.0](https://git.knut.univention.de/univention/components/keycloak/compare/v0.5.2...v0.6.0) (2024-10-23)
 
 
