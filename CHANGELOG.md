@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.7.1](https://git.knut.univention.de/univention/components/keycloak/compare/v0.7.0...v0.7.1) (2024-11-25)
+
+
+### Bug Fixes
+
+* Kyverno lint ([8312e51](https://git.knut.univention.de/univention/components/keycloak/commit/8312e51a099126b96e5769370d59bdc37a962b59))
+
 ## [0.7.0](https://git.knut.univention.de/univention/components/keycloak/compare/v0.6.0...v0.7.0) (2024-11-05)
 
 
