@@ -83,12 +83,6 @@ repos:
           - "--format=parsable"
           - "--strict"
 
-  - repo: "https://github.com/ansible/ansible-lint"
-    rev: "v6.22.1"
-    hooks:
-      - id: "ansible-lint"
-        name: "Ansible-lint"
-
   - repo: "https://github.com/google/yapf"
     rev: "v0.40.2"
     hooks:
@@ -208,7 +202,7 @@ repos:
           - "manual"
 
   - repo: "https://git.knut.univention.de/univention/customers/dataport/upx/kyverno-test-pre-commit"
-    rev: "v0.1.0"
+    rev: "v0.3.0"
     hooks:
       - id: "kyverno-test"
 
