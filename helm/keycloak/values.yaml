@@ -3,6 +3,15 @@
 ---
 # The global properties are used to configure multiple charts at once.
 global:
+  passwordGeneration:
+    # -- Globally Enable / Disable password generation for secrets manifests.
+    # Set this to false to ensure that no generated password is used.
+    enabled: true
+    # -- Gloabl seed to make password generation reproducible for repeat deployments.
+    # Caution! Nubus for Kubernetes does not support credentials changes.
+    # If you change this value redeploy on top of an existing deployment, you will break it.
+    # To fix this, redeploy again with the original seed.
+    seed: nil
   # -- Indicates wether this chart is part of a Nubus deployment.
   nubusDeployment: false
 
@@ -30,6 +39,8 @@ global:
     connection:
       host: ""
       port: ""
+# -- String to fully override common.names.fullname
+fullnameOverride: ""
 
 # -- PostgreSQL settings.
 postgresql:
