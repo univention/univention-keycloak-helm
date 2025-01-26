@@ -261,15 +261,6 @@ true
 			<td>Provide a name to substitute for the full names of resources.</td>
 		</tr>
 		<tr>
-			<td>fullnameOverride</td>
-			<td>string</td>
-			<td><pre lang="json">
-""
-</pre>
-</td>
-			<td>String to fully override common.names.fullname</td>
-		</tr>
-		<tr>
 			<td>global.domain</td>
 			<td>string</td>
 			<td><pre lang="json">
@@ -306,24 +297,6 @@ false
 			<td>Indicates wether this chart is part of a Nubus deployment.</td>
 		</tr>
 		<tr>
-			<td>global.passwordGeneration.enabled</td>
-			<td>bool</td>
-			<td><pre lang="json">
-true
-</pre>
-</td>
-			<td>Globally Enable / Disable password generation for secrets manifests. Set this to false to ensure that no generated password is used.</td>
-		</tr>
-		<tr>
-			<td>global.passwordGeneration.seed</td>
-			<td>string</td>
-			<td><pre lang="json">
-"nil"
-</pre>
-</td>
-			<td>Gloabl seed to make password generation reproducible for repeat deployments. Caution! Nubus for Kubernetes does not support credentials changes. If you change this value redeploy on top of an existing deployment, you will break it. To fix this, redeploy again with the original seed.</td>
-		</tr>
-		<tr>
 			<td>global.postgresql.connection.host</td>
 			<td>string</td>
 			<td><pre lang="json">
@@ -340,6 +313,24 @@ true
 </pre>
 </td>
 			<td></td>
+		</tr>
+		<tr>
+			<td>global.secrets.enabled</td>
+			<td>bool</td>
+			<td><pre lang="json">
+true
+</pre>
+</td>
+			<td>Global toggle for templating secret manifests. Set this to false to ensure that this helm chart creates no secret manifests.</td>
+		</tr>
+		<tr>
+			<td>global.secrets.seed</td>
+			<td>string</td>
+			<td><pre lang="json">
+null
+</pre>
+</td>
+			<td>Gloabl seed to make password generation reproducible for repeat deployments. Caution! Nubus for Kubernetes does not support credentials changes. If you change this value and redeploy on top of an existing deployment, you will break it. To recover from this, redeploy again with the original seed.</td>
 		</tr>
 		<tr>
 			<td>global.subDomains.keycloak</td>

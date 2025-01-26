@@ -2,6 +2,10 @@
 # SPDX-FileCopyrightText: 2024 Univention GmbH
 
 ---
+global:
+  secrets:
+    enabled: false
+    seed: "univention"
 
 ingress:
   ingressClassName: "nginx"
