@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.7.2](https://git.knut.univention.de/univention/components/keycloak/compare/v0.7.1...v0.7.2) (2025-02-10)
+
+
+### Bug Fixes
+
+* add .kyverno to helmignore ([abe589c](https://git.knut.univention.de/univention/components/keycloak/commit/abe589c061076bb5f40146751b8ad22e302e0a67))
+
 ## [0.7.1](https://git.knut.univention.de/univention/components/keycloak/compare/v0.7.0...v0.7.1) (2024-11-25)
 
 
