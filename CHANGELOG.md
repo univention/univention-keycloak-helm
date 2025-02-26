@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.8.0](https://git.knut.univention.de/univention/components/keycloak/compare/v0.7.2...v0.8.0) (2025-02-26)
+
+
+### Features
+
+* adhoc provisioning and keycloak upgrades. ([a48ce13](https://git.knut.univention.de/univention/components/keycloak/commit/a48ce13a5a3a8d62dee11d8f7fc9cc2f404ac721))
+
 ## [0.7.2](https://git.knut.univention.de/univention/components/keycloak/compare/v0.7.1...v0.7.2) (2025-02-10)
 
 
