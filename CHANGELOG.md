@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.9.0](https://git.knut.univention.de/univention/components/keycloak/compare/v0.8.0...v0.9.0) (2025-03-05)
+
+
+### Features
+
+* add new version of image tag ([fee61f3](https://git.knut.univention.de/univention/components/keycloak/commit/fee61f3ec8b63eea483e096729a089b7e96b58b1))
+* add new version of image tag with correct number versioning ([1581c89](https://git.knut.univention.de/univention/components/keycloak/commit/1581c895dc8d35f7fc7a50101fc586737c496e59))
+
 ## [0.8.0](https://git.knut.univention.de/univention/components/keycloak/compare/v0.7.2...v0.8.0) (2025-02-26)
 
 
