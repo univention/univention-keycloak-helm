@@ -564,7 +564,8 @@ true
         "accountExpired": "Das Benutzerkonto ist abgelaufen.",
         "accountLocked": "Das Benutzerkonto ist gesperrt.",
         "loginTitle": "Univention Corporate Server Single-Sign On",
-        "loginTitleHtml": "Anmelden bei {{ .Values.global.domain . }}",
+        "loginTitleHtml": "{{ tpl .Values.global.keycloak.login.messages.de.loginTitleHtmlTpl . }}",
+        "loginTitleHtmlTpl": "Anmelden bei {{ .Values.global.domain }}",
         "tryAgain": "Erneut versuchen",
         "updatePasswordTitle": "Das Passwort ist abgelaufen und muss erneuert werden."
       },
@@ -573,7 +574,8 @@ true
         "accountExpired": "The account has expired.",
         "accountLocked": "The account is locked.",
         "loginTitle": "Univention Corporate Server Single-Sign On",
-        "loginTitleHtml": "Login at {{ .Values.global.domain . }}",
+        "loginTitleHtml": "{{ tpl .Values.global.keycloak.login.messages.en.loginTitleHtmlTpl . }}",
+        "loginTitleHtmlTpl": "Login at {{ .Values.global.domain }}",
         "tryAgain": "Try again",
         "updatePasswordTitle": "The password has expired and must be renewed."
       }
