@@ -5,8 +5,7 @@
 apiVersion: "v1"
 kind: ConfigMap
 metadata:
-  # name: {{ include "common.names.fullname" . | quote }}
-  name: "config-map-keycloak-translations"
+  name: "{{ include "common.names.fullname" . }}-translations"
   namespace: {{ include "common.names.namespace" . | quote }}
   labels:
     {{- $commonLabels := include "common.labels.standard" . | fromYaml }}
@@ -20,7 +19,7 @@ metadata:
   annotations: {{- include "common.tplvalues.render" ( dict "value" .Values.additionalAnnotations "context" . ) | nindent 4 }}
   {{- end }}
 data:
-  messages_de.properties:
+  messages_de.properties: |
     tryAgain={{ .Values.keycloak.login.messages.de.tryAgain }}
     updatePasswordTitle={{ .Values.keycloak.login.messages.de.updatePasswordTitle }}
     loginTitleHtml={{ .Values.keycloak.login.messages.de.loginTitleHtml }}
@@ -28,7 +27,7 @@ data:
     accountDisabled={{ .Values.keycloak.login.messages.de.accountDisabled }}
     accountExpired={{ .Values.keycloak.login.messages.de.accountExpired }}
     accountLocked={{ .Values.keycloak.login.messages.de.accountLocked }}
-  messages_en.properties:
+  messages_en.properties: |
     tryAgain={{ .Values.keycloak.login.messages.en.tryAgain }}
     updatePasswordTitle={{ .Values.keycloak.login.messages.en.updatePasswordTitle }}
     loginTitleHtml={{ .Values.keycloak.login.messages.en.loginTitleHtml }}
