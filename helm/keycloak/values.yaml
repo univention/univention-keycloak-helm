@@ -71,8 +71,7 @@ keycloak:
       de:
         tryAgain: "Erneut versuchen"
         updatePasswordTitle: "Das Passwort ist abgelaufen und muss erneuert werden."
-        loginTitleHtmlTpl: "Anmelden bei {{ .Values.global.domain }}"
-        loginTitleHtml: "{{ tpl .Values.global.keycloak.login.messages.de.loginTitleHtmlTpl . }}"
+        loginTitleHtml: "Anmelden bei {{ .Values.global.domain }}"
         loginTitle: "Univention Corporate Server Single-Sign On"
         accountDisabled: "Das Benutzerkonto ist deaktiviert."
         accountExpired: "Das Benutzerkonto ist abgelaufen."
@@ -80,8 +79,7 @@ keycloak:
       en:
         tryAgain: "Try again"
         updatePasswordTitle: "The password has expired and must be renewed."
-        loginTitleHtmlTpl: "Login at {{ .Values.global.domain }}"
-        loginTitleHtml: "{{ tpl .Values.global.keycloak.login.messages.en.loginTitleHtmlTpl . }}"
+        loginTitleHtml: "Login at {{ .Values.global.domain }}"
         loginTitle: "Univention Corporate Server Single-Sign On"
         accountDisabled: "The account is disabled."
         accountExpired: "The account has expired."

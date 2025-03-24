@@ -22,7 +22,7 @@ data:
   messages_de.properties: |
     tryAgain={{ .Values.keycloak.login.messages.de.tryAgain }}
     updatePasswordTitle={{ .Values.keycloak.login.messages.de.updatePasswordTitle }}
-    loginTitleHtml={{ .Values.keycloak.login.messages.de.loginTitleHtml }}
+    loginTitleHtml={{ tpl .Values.keycloak.login.messages.de.loginTitleHtml . }}
     loginTitle={{ .Values.keycloak.login.messages.de.loginTitle }}
     accountDisabled={{ .Values.keycloak.login.messages.de.accountDisabled }}
     accountExpired={{ .Values.keycloak.login.messages.de.accountExpired }}
@@ -30,7 +30,7 @@ data:
   messages_en.properties: |
     tryAgain={{ .Values.keycloak.login.messages.en.tryAgain }}
     updatePasswordTitle={{ .Values.keycloak.login.messages.en.updatePasswordTitle }}
-    loginTitleHtml={{ .Values.keycloak.login.messages.en.loginTitleHtml }}
+    loginTitleHtml={{ tpl .Values.keycloak.login.messages.en.loginTitleHtml . }}
     loginTitle={{ .Values.keycloak.login.messages.en.loginTitle }}
     accountDisabled={{ .Values.keycloak.login.messages.en.accountDisabled }}
     accountExpired={{ .Values.keycloak.login.messages.en.accountExpired }}
