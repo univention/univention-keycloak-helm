@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.9.2](https://git.knut.univention.de/univention/components/keycloak/compare/v0.9.1...v0.9.2) (2025-03-25)
+
+
+### Bug Fixes
+
+* Update helm_docs ([ef94da0](https://git.knut.univention.de/univention/components/keycloak/commit/ef94da0ebe427aef44bc86cda2199e848299b2ab)), closes [univention/dev/internal/team-nubus#1080](https://git.knut.univention.de/univention/dev/internal/team-nubus/issues/1080)
+* Updated Keycloak image path ([17057dc](https://git.knut.univention.de/univention/components/keycloak/commit/17057dc23b3b40d233d0282f342f87b594391d8e)), closes [univention/dev/internal/team-nubus#1080](https://git.knut.univention.de/univention/dev/internal/team-nubus/issues/1080)
+
 ## [0.9.1](https://git.knut.univention.de/univention/components/keycloak/compare/v0.9.0...v0.9.1) (2025-03-21)
 
 
