@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.9.3](https://git.knut.univention.de/univention/components/keycloak/compare/v0.9.2...v0.9.3) (2025-04-09)
+
+
+### Bug Fixes
+
+* Added login error messages ([7bf240f](https://git.knut.univention.de/univention/components/keycloak/commit/7bf240f8ac97144aff87cefb96a846dc2752061d)), closes [univention/dev/internal/team-nubus#996](https://git.knut.univention.de/univention/dev/internal/team-nubus/issues/996)
+
 ## [0.9.2](https://git.knut.univention.de/univention/components/keycloak/compare/v0.9.1...v0.9.2) (2025-03-25)
 
 
