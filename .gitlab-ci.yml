@@ -19,7 +19,10 @@ lint-pre-commit:
   before_script:
     - "helm repo add bitnami https://charts.bitnami.com/bitnami"
 
-package-helm-charts:
+.package-helm-charts:
   variables:
     SKIP_UPDATE_HELM_VALUES: "true"
+  before_script:
+    - "helm repo add bitnami https://charts.bitnami.com/bitnami"
+
 ...
