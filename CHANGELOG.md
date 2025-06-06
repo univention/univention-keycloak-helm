@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.10.1](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-helm-chart/compare/v0.10.0...v0.10.1) (2025-06-06)
+
+
+### Bug Fixes
+
+* move addlicense pre-commit hook ([8f1491a](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-helm-chart/commit/8f1491aaba4aaec9ccedf7cee000a00eceab75aa))
+* update common-ci to main ([b667f16](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-helm-chart/commit/b667f1666578d53dd17fc331eea80cbbaa100136))
+
 ## [0.10.0](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-helm-chart/compare/v0.9.3...v0.10.0) (2025-05-05)
 
 
