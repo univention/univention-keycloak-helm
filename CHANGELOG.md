@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.10.2](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-helm-chart/compare/v0.10.1...v0.10.2) (2025-06-23)
+
+
+### Bug Fixes
+
+* use default cluster ingress class if not defined ([00bb6e9](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-helm-chart/commit/00bb6e99a420a3c1569469ce6b31e45926ac367c)), closes [univention/dev/internal/team-nubus#1134](https://git.knut.univention.de/univention/dev/internal/team-nubus/issues/1134)
+
 ## [0.10.1](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-helm-chart/compare/v0.10.0...v0.10.1) (2025-06-06)
 
 
