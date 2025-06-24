@@ -211,7 +211,7 @@ image:
   imagePullPolicy: "IfNotPresent"
 
   # -- Define image tag.
-  tag: "0.0.1@sha256:86ad28bf36620df833bcff7bb93081ee176ab6528de4f39b810730c8d03cf659"
+  tag: "0.2.2@sha256:de6ae9c1410c94f1f9af2b2d8a1966984c4b416464a49e7cd11ff2fa0f032b4b"
 
 # -- Credentials to fetch images from private registry
 # Ref: https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/
