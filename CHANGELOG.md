@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.11.1](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-helm-chart/compare/v0.11.0...v0.11.1) (2025-07-25)
+
+
+### Bug Fixes
+
+* **helm:** Mark root filesystem as read-only ([2745766](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-helm-chart/commit/27457664940e84943003ac79286ed920fb20318c)), closes [univention/dev/internal/team-nubus#1325](https://git.knut.univention.de/univention/dev/internal/team-nubus/issues/1325)
+
 ## [0.11.0](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-helm-chart/compare/v0.10.2...v0.11.0) (2025-06-30)
 
 
