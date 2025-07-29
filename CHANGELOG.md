@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.11.2](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-helm-chart/compare/v0.11.1...v0.11.2) (2025-07-29)
+
+
+### Bug Fixes
+
+* **keycloak:** upgrade to keycloak 26.3.1 ([a86df8a](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-helm-chart/commit/a86df8a670d7bf2a3d3ddc6f885900886f7b4080)), closes [univention/dev/internal/team-nubus#1355](https://git.knut.univention.de/univention/dev/internal/team-nubus/issues/1355)
+
 ## [0.11.1](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-helm-chart/compare/v0.11.0...v0.11.1) (2025-07-25)
 
 
