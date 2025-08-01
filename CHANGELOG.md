@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.11.3](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-helm-chart/compare/v0.11.2...v0.11.3) (2025-08-01)
+
+
+### Bug Fixes
+
+* initContainer resources templating ([e0512de](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-helm-chart/commit/e0512de0dbace799b8b33dd260c65c720efcee8e)), closes [univention/dev/internal/team-nubus#1356](https://git.knut.univention.de/univention/dev/internal/team-nubus/issues/1356)
+
 ## [0.11.2](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-helm-chart/compare/v0.11.1...v0.11.2) (2025-07-29)
 
 
