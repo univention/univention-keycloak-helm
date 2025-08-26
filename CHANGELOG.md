@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.12.0](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-helm-chart/compare/v0.11.5...v0.12.0) (2025-08-26)
+
+
+### Features
+
+* upgrade bitnami charts ([1bbaeaa](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-helm-chart/commit/1bbaeaadf36a719ef167adc7baaf36d19877dd48)), closes [univention/dev/internal/team-nubus#1406](https://git.knut.univention.de/univention/dev/internal/team-nubus/issues/1406)
+
 ## [0.11.5](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-helm-chart/compare/v0.11.4...v0.11.5) (2025-08-19)
 
 
