@@ -135,7 +135,8 @@ spec:
                   name: {{ tpl .Values.postgresql.auth.existingSecret.name . }}
                   key: {{ include "common.secrets.key" (dict "existingSecret" .Values.postgresql.auth.existingSecret "key" "password") }}
             - name: "UNIVENTION_META_JSON"
-              value: {{ printf "https://%s.%s/univention/meta.json" .Values.global.subDomains.portal .Values.global.domain | quote }}
+              # value: {{ printf "https://%s.%s/univention/meta.json" .Values.global.subDomains.portal .Values.global.domain | quote }}
+              value: "http://localhost:8000/univention/meta.json"
           {{- with .Values.extraEnvVars }}
             {{- . | toYaml | nindent 12 }}
           {{- end }}
