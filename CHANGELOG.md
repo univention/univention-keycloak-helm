@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.12.2](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-helm-chart/compare/v0.12.1...v0.12.2) (2025-09-24)
+
+
+### Bug Fixes
+
+* Automatic kyverno tests ([d02e1ab](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-helm-chart/commit/d02e1ab91d7b14be26a2f33ead22c52a8482966b)), closes [univention/dev/internal/team-nubus#1426](https://git.knut.univention.de/univention/dev/internal/team-nubus/issues/1426)
+
 ## [0.12.1](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-helm-chart/compare/v0.12.0...v0.12.1) (2025-08-28)
 
 
