@@ -1,5 +1,19 @@
 # Changelog
 
+## [0.13.0](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-helm-chart/compare/v0.12.2...v0.13.0) (2025-10-15)
+
+
+### Features
+
+* generate keycloak secret / add tests on secrets ([86bd966](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-helm-chart/commit/86bd9662326927e72ed9ecd5222f5ede0f105a4d)), closes [univention/dev/internal/team-nubus#1398](https://git.knut.univention.de/univention/dev/internal/team-nubus/issues/1398)
+* generate postgresql secret / add tests on secrets ([d36ee64](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-helm-chart/commit/d36ee64c8d38af170ab527c7b1fbf4cef66f1647)), closes [univention/dev/internal/team-nubus#1398](https://git.knut.univention.de/univention/dev/internal/team-nubus/issues/1398)
+* **helm:** Refactor helm chart to allign with common behaviour ([36b5b75](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-helm-chart/commit/36b5b75eb296004349e4b6c9db47086de113b1d2)), closes [univention/dev/internal/team-nubus#1398](https://git.knut.univention.de/univention/dev/internal/team-nubus/issues/1398)
+
+
+### Bug Fixes
+
+* add pre-commit service to docker-compose ([f1c8e44](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-helm-chart/commit/f1c8e4445c404cfe86a33900b36296ef5229ffea)), closes [univention/dev/internal/team-nubus#1398](https://git.knut.univention.de/univention/dev/internal/team-nubus/issues/1398)
+
 ## [0.12.2](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-helm-chart/compare/v0.12.1...v0.12.2) (2025-09-24)
 
 
