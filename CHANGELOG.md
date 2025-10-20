@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.14.0](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-helm-chart/compare/v0.13.0...v0.14.0) (2025-10-20)
+
+
+### Features
+
+* **keycloak:** updated keycloak image to 26.3.5 ([0e7bcd7](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-helm-chart/commit/0e7bcd7b0dd205e844b76d363507e3b1ee54e641)), closes [univention/dev/internal/team-nubus#1464](https://git.knut.univention.de/univention/dev/internal/team-nubus/issues/1464)
+
 ## [0.13.0](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-helm-chart/compare/v0.12.2...v0.13.0) (2025-10-15)
 
 
