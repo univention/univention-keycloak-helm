@@ -443,9 +443,9 @@ serviceAccount:
 
 #  Configure extra options for containers probes.
 startupProbe:
-  # -- Enables kubernetes ReadinessProbe.
+  # -- Enables kubernetes StartupProbe.
   enabled: true
-  # -- Delay after container start until ReadinessProbe is executed.
+  # -- Delay after container start until StartupProbe is executed.
   initialDelaySeconds: 30
   # -- Number of failed executions until container is terminated.
   failureThreshold: 10
