@@ -1,11 +1,30 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:recommended",
-    "group:all",
-    ":disableRateLimiting"
+    'config:best-practices',
+    'local>univention/dev/projects/ucs-base-image//renovate/preset#v0.20.0',
+  ],
+  packageRules: [
+    {
+      matchDatasources: [
+        'docker',
+      ],
+      pinDigests: true,
+      matchPackageNames: [
+        '/.*/',
+      ],
+    },
+    {
+      matchDatasources: [
+        'docker',
+      ],
+      pinDigests: false,
+      matchPackageNames: [
+        '/^.*:latest$/',
+      ],
+    },
   ],
   "semanticCommits": "enabled",
   "semanticCommitType": "fix",
-  "semanticCommitScope": "deps"
+  "semanticCommitScope": "deps",
 }
