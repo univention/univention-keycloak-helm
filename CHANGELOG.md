@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.15.0](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-helm-chart/compare/v0.14.1...v0.15.0) (2025-11-05)
+
+
+### Features
+
+* Trigger release ([f579e60](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-helm-chart/commit/f579e606dae1d105ced65a8fea179d435685d52d)), closes [univention/dev/internal/team-nubus#1486](https://git.knut.univention.de/univention/dev/internal/team-nubus/issues/1486)
+
 ## [0.14.1](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-helm-chart/compare/v0.14.0...v0.14.1) (2025-11-05)
 
 
