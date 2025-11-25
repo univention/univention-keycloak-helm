@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.15.5](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-helm-chart/compare/v0.15.4...v0.15.5) (2025-11-25)
+
+
+### Bug Fixes
+
+* set the cache stack to jdbc-ping ([c999611](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-helm-chart/commit/c999611ef334ae5e4bb9be49c231791ceb8d6790)), closes [univention/dev/internal/team-nubus#1374](https://git.knut.univention.de/univention/dev/internal/team-nubus/issues/1374)
+
 ## [0.15.4](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-helm-chart/compare/v0.15.3...v0.15.4) (2025-11-20)
 
 
