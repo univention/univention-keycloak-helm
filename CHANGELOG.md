@@ -1,5 +1,62 @@
 # Changelog
 
+## [0.15.6](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-helm-chart/compare/v0.15.5...v0.15.6) (2025-11-27)
+
+
+### Bug Fixes
+
+* **deps:** Update dependency univention/dev/nubus-for-k8s/common-ci to v1.52.0 ([4691707](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-helm-chart/commit/4691707f1a93ee90b470a68a338a59cd1dab5e1a)), closes [#0](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-helm-chart/issues/0)
+
+## [0.15.5](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-helm-chart/compare/v0.15.4...v0.15.5) (2025-11-25)
+
+
+### Bug Fixes
+
+* set the cache stack to jdbc-ping ([c999611](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-helm-chart/commit/c999611ef334ae5e4bb9be49c231791ceb8d6790)), closes [univention/dev/internal/team-nubus#1374](https://git.knut.univention.de/univention/dev/internal/team-nubus/issues/1374)
+
+## [0.15.4](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-helm-chart/compare/v0.15.3...v0.15.4) (2025-11-20)
+
+
+### Bug Fixes
+
+* **deps:** Update dependency univention/dev/nubus-for-k8s/common-ci to v1.51.0 ([98c0506](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-helm-chart/commit/98c05067b7cab8addd737c96916abac7087d989c)), closes [#0](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-helm-chart/issues/0)
+
+## [0.15.3](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-helm-chart/compare/v0.15.2...v0.15.3) (2025-11-19)
+
+
+### Bug Fixes
+
+* **deps:** Update dependency univention/dev/nubus-for-k8s/common-ci to v1.50.2 ([55c28f3](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-helm-chart/commit/55c28f391d1d07ad0c9ab4135c9060eb087e9a69)), closes [#0](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-helm-chart/issues/0)
+* **deps:** Update dependency univention/dev/nubus-for-k8s/common-ci to v1.50.3 ([34a8c58](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-helm-chart/commit/34a8c5848484ce0f8cb6a1fbcdd8f9b4f13145b1)), closes [#0](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-helm-chart/issues/0)
+
+## [0.15.2](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-helm-chart/compare/v0.15.1...v0.15.2) (2025-11-17)
+
+
+### Bug Fixes
+
+* test keycloak 26.4.4 ([2e826b6](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-helm-chart/commit/2e826b6d7c7204037999eef20c4981ec533d7f42)), closes [univention/dev/internal/dev-issues/dev-incidents#186](https://git.knut.univention.de/univention/dev/internal/dev-issues/dev-incidents/issues/186)
+
+## [0.15.1](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-helm-chart/compare/v0.15.0...v0.15.1) (2025-11-12)
+
+
+### Bug Fixes
+
+* **deps:** Update dependency univention/dev/nubus-for-k8s/common-ci to v1.50.0 ([7a166ea](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-helm-chart/commit/7a166ead52ddd9c3587f374812bf6a2aaf3d8c22)), closes [#0](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-helm-chart/issues/0)
+
+## [0.15.0](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-helm-chart/compare/v0.14.1...v0.15.0) (2025-11-05)
+
+
+### Features
+
+* Trigger release ([f579e60](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-helm-chart/commit/f579e606dae1d105ced65a8fea179d435685d52d)), closes [univention/dev/internal/team-nubus#1486](https://git.knut.univention.de/univention/dev/internal/team-nubus/issues/1486)
+
+## [0.14.1](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-helm-chart/compare/v0.14.0...v0.14.1) (2025-11-05)
+
+
+### Bug Fixes
+
+* **deps:** Update dependency univention/dev/nubus-for-k8s/common-ci to v1.48.0 ([9835e4e](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-helm-chart/commit/9835e4e54d63a29c42c40cff7d0cd84018febab7)), closes [#0](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-helm-chart/issues/0)
+
 ## [0.14.0](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-helm-chart/compare/v0.13.0...v0.14.0) (2025-10-20)
 
 

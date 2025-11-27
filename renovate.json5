@@ -1,0 +1,38 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    'config:best-practices',
+    'local>univention/dev/projects/ucs-base-image//renovate/preset#v0.20.0',
+  ],
+  packageRules: [
+    {
+      matchDatasources: [
+        'docker',
+      ],
+      pinDigests: true,
+      matchPackageNames: [
+        '/.*/',
+      ],
+    },
+    {
+      matchDatasources: [
+        'docker',
+      ],
+      pinDigests: false,
+      matchPackageNames: [
+        '/^.*:latest$/',
+      ],
+    },
+    {
+      matchDatasources: [
+        'docker',
+      ],
+      registryUrls: [
+        'artifacts.software-univention.de',
+      ],
+    },
+  ],
+  "semanticCommits": "enabled",
+  "semanticCommitType": "fix",
+  "semanticCommitScope": "deps",
+}
