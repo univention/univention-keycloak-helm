@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.15.9](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-helm-chart/compare/v0.15.8...v0.15.9) (2025-12-03)
+
+
+### Bug Fixes
+
+* **deps:** Update dependency univention/dev/nubus-for-k8s/common-ci to v1.53.1 ([98ed57b](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-helm-chart/commit/98ed57bf8a488b456093cf56f7d7eb51b57ce4e5)), closes [#0](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-helm-chart/issues/0)
+
 ## [0.15.8](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-helm-chart/compare/v0.15.7...v0.15.8) (2025-11-29)
 
 
