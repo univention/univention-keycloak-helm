@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.15.10](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-helm-chart/compare/v0.15.9...v0.15.10) (2025-12-05)
+
+
+### Bug Fixes
+
+* **helm:** Add component-specific extraEnvVars support ([fba2505](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-helm-chart/commit/fba25058261e843ff6d7120e60523dbf52a4f8fb)), closes [univention/dev/internal/team-nubus#977](https://git.knut.univention.de/univention/dev/internal/team-nubus/issues/977)
+
 ## [0.15.9](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-helm-chart/compare/v0.15.8...v0.15.9) (2025-12-03)
 
 
