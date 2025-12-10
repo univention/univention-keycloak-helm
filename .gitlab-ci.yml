@@ -3,7 +3,7 @@
 ---
 include:
   - project: "univention/dev/nubus-for-k8s/common-ci"
-    ref: "v1.52.0"
+    ref: "v1.54.0"
     file:
       - "defaults/stages.yaml"
       - "defaults/nubus-workflow.yaml"
@@ -20,7 +20,7 @@ lint-pre-commit:
     - "helm repo add bitnami https://charts.bitnami.com/bitnami"
 
 chart-tests:
-  image: "gitregistry.knut.univention.de/univention/dev/nubus-for-k8s/common-helm/testrunner:0.28.0"
+  image: "gitregistry.knut.univention.de/univention/dev/nubus-for-k8s/common-helm/testrunner:0.29.0"
   stage: "test"
   needs: []
   script:
@@ -32,5 +32,4 @@ chart-tests:
     SKIP_UPDATE_HELM_VALUES: "true"
   before_script:
     - "helm repo add bitnami https://charts.bitnami.com/bitnami"
-
 ...
