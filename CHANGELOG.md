@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.16.0](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-helm-chart/compare/v0.15.15...v0.16.0) (2026-01-19)
+
+
+### Features
+
+* Add UMC gateway proxy to Keycloak ingress to avoid CORS issues ([140db6c](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-helm-chart/commit/140db6c345897d753d098eaf0f1a27bfafa320d5)), closes [univention/dev/internal/team-nubus#1555](https://git.knut.univention.de/univention/dev/internal/team-nubus/issues/1555)
+
 ## [0.15.15](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-helm-chart/compare/v0.15.14...v0.15.15) (2026-01-16)
 
 
