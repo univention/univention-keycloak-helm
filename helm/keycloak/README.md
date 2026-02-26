@@ -363,7 +363,7 @@ null
 			<td>image.repository</td>
 			<td>string</td>
 			<td><pre lang="json">
-"nubus/images/keycloak"
+"nubus-dev/images/keycloak"
 </pre>
 </td>
 			<td>Container repository string.</td>
@@ -372,7 +372,7 @@ null
 			<td>image.tag</td>
 			<td>string</td>
 			<td><pre lang="json">
-"0.5.0@sha256:cf8567c10bd691f52ffe096224f06ec92bc883a6c93df18316de064140f6e760"
+"0.6.0-post-jlohmer-kc-26-5-4@sha256:d83a3ae9e9798bebe163761484fc2d7aae2308c26771eded40e14649a4bb412b"
 </pre>
 </td>
 			<td>Define image tag.</td>
