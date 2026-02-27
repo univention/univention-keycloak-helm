@@ -219,7 +219,16 @@ true
 			<td>extraEnvVars</td>
 			<td>list</td>
 			<td><pre lang="json">
-[]
+[
+  {
+    "name": "KC_SPI_EVENTS_LISTENER_JBOSS_LOGGING_SUCCESS_LEVEL",
+    "value": "info"
+  },
+  {
+    "name": "KC_SPI_EVENTS_LISTENER_JBOSS_LOGGING_ERROR_LEVEL",
+    "value": "warn"
+  }
+]
 </pre>
 </td>
 			<td>Array with extra environment variables to add to containers.  extraEnvVars:   - name: FOO     value: "bar" </td>
