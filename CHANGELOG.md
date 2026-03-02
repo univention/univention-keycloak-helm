@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.16.3](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-helm-chart/compare/v0.16.2...v0.16.3) (2026-03-02)
+
+
+### Bug Fixes
+
+* Update Keycloak to 26.5.4 ([e60f8c5](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-helm-chart/commit/e60f8c5161e63ee374f68585fbf73d4894a36b0f)), closes [univention/dev/nubus-for-k8s/nubus-helm#18](https://git.knut.univention.de/univention/dev/nubus-for-k8s/nubus-helm/issues/18)
+
 ## [0.16.2](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-helm-chart/compare/v0.16.1...v0.16.2) (2026-02-11)
 
 
