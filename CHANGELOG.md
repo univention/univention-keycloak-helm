@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.16.4](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-helm-chart/compare/v0.16.3...v0.16.4) (2026-03-03)
+
+
+### Bug Fixes
+
+* fix the keycloak container image version ([bee65c9](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-helm-chart/commit/bee65c90c3591d83e704fda3ce31b2d859bc93a6)), closes [univention/dev/nubus-for-k8s/nubus-helm#18](https://git.knut.univention.de/univention/dev/nubus-for-k8s/nubus-helm/issues/18)
+
 ## [0.16.3](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-helm-chart/compare/v0.16.2...v0.16.3) (2026-03-02)
 
 
