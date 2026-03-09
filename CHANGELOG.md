@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.16.5](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-helm-chart/compare/v0.16.4...v0.16.5) (2026-03-09)
+
+
+### Bug Fixes
+
+* Update Keycloak to 26.5.5 ([d54850f](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-helm-chart/commit/d54850f6f59a104e9d848a83d8a9d40740dc6c5f)), closes [univention/dev/projects/keycloak/keycloak-app#258](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-app/issues/258)
+
 ## [0.16.4](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-helm-chart/compare/v0.16.3...v0.16.4) (2026-03-03)
 
 
